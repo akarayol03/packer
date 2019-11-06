@@ -10,7 +10,7 @@
     "provisioners": [
         {
             "type":  "file",
-            "sorce": "files/r1soft.repo",
+            "source": "files/r1soft.repo",
             "destination": "/etc/yum.repos.d/r1soft.repo"
         },
         {
