@@ -18,7 +18,6 @@
           "inline": [
               "sudo yum update -y",
               "sudo yum install serverbackup-enterprise-agent -y",
-              "sudo systemctl start sbm-agent",
               "sudo systemctl enable sbm-agent",
               "sudo systemctl stop firewalld"
           ]
