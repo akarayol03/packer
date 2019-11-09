@@ -5,7 +5,7 @@
       "instance_type": "{{user `instance_type`}}",
       "source_ami": "{{user `source_ami`}}",
       "ssh_username": "{{user `ssh_username`}}",
-      "ami_name": "ansible-tower {{timestamp}}"
+      "ami_name": "updated {{timestamp}}"
     }],
     "provisioners": [
         {
@@ -26,12 +26,8 @@
               "sudo yum update  -y",
               "sudo  yum install serverbackup-enterprise-agent -y",
               "sudo systemctl enable sbm-agent",
-              "sudo yum install java-1.8.0-openjdk-devel -y",
-              "sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key",
-              "sudo yum install jenkins -y",
-              "sudo systemctl start jenkins",
-              "sudo systemctl status jenkins",
-              "sudo systemctl enable jenkins"
+              "sudo yum install git -y",
+              "git clone 'https://github.com/fuchicorp"
             ]
         }
     ]
