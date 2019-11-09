@@ -12,7 +12,7 @@
         "owners": ["679593333241"],
       "ssh_username": "{{user `ssh_username`}}",
       "ami_name": "updated {{timestamp}}"
-    }],
+      }],
     "provisioners": [
         {
             "type":  "file",
