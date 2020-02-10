@@ -1,10 +1,10 @@
 {
     "builders": [{
       "type": "amazon-ebs",
-      "region": "{{user `region`}}",
-      "instance_type": "{{user `instance_type`}}",
-      "source_ami": "{{user `source_ami`}}",
-      "ssh_username": "{{user `ssh_username`}}",
+      "region": "us-east-1",
+      "instance_type": "t2.micro",
+      "source_ami": "ami-0fe72edf3b2f0c9e6",
+      "ssh_username": "centos",
       "ami_name": "ansible-tower {{timestamp}}"
     }],
     "provisioners": [
